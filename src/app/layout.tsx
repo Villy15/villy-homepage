@@ -1,8 +1,9 @@
+import Header from '@/components/Header';
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { M_PLUS_1 } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const m_plus_1 = M_PLUS_1({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Adrian Villanueva - Homepage',
@@ -16,8 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main>{children}</main>
+      <body className={m_plus_1.className}>
+        <main>
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );
