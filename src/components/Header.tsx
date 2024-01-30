@@ -8,7 +8,8 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 import Link from 'next/link';
-import { RxHamburgerMenu, RxSun } from 'react-icons/rx';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import ToggleTheme from './ToggleTheme';
 
 const _links = [
   { href: '/', name: 'Home' },
@@ -27,7 +28,7 @@ const Header = () => {
         {/* Links */}
         <div className="hidden md:block">
           {_links.map(({ href, name }, index) => (
-            <Button variant="link" key={index} className="px-2">
+            <Button variant="link" key={index} className="px-2 text-foreground">
               <Link href={href}>{name}</Link>
             </Button>
           ))}
@@ -36,9 +37,7 @@ const Header = () => {
         <div className="flex">
           {/* Toggle Dark Mode */}
           <div>
-            <Button variant="default" size="icon">
-              <RxSun />
-            </Button>
+            <ToggleTheme />
           </div>
 
           {/* Hamburger */}
