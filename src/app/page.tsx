@@ -14,7 +14,7 @@ const Home = () => {
       animate={{ opacity: 1, y: 50 }}
       transition={{ duration: 0.5 }}
     >
-      <article className="mx-auto max-w-xl px-4">
+      <article className="mx-auto max-w-xl px-4 space-y-8">
         <div className="m-4 mb-4 rounded-xl bg-primary text-foreground bg-opacity-35 p-4 text-center">
           Hello, I&apos;m an indie app developer based in Philippines!
         </div>

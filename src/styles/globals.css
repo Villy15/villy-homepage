@@ -10,7 +10,7 @@
     --card-foreground: 34 5% 10%;
     --popover: 34 41% 95%;
     --popover-foreground: 34 95% 0%;
-    --primary: 34 41.2% 90%;
+    --primary: 34 41.2% 88%;
     --primary-foreground: 0 0% 0%;
     --secondary: 34 30% 70%;
     --secondary-foreground: 0 0% 0%;
@@ -29,7 +29,7 @@
   .dark {
     --background: 240 4% 13%;
     --foreground: 240 2% 90%;
-    --card: 240 2% 0%;
+    --card: 240 2% 20%;
     --card-foreground: 240 2% 90%;
     --popover: 240 10% 5%;
     --popover-foreground: 240 2% 90%;

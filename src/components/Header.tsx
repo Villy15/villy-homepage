@@ -18,7 +18,7 @@ const _links = [
 
 const Header = () => {
   return (
-    <nav className="fixed z-10 w-full bg-slate-200 bg-opacity-25 backdrop-blur-sm">
+    <nav className="fixed z-10 w-full bg-card bg-opacity-25 backdrop-blur-sm">
       <div className="mx-auto flex max-w-screen-md items-center justify-between p-2">
         {/* Name */}
         <div className="pl-2 font-bold">
